@@ -1,3 +1,6 @@
+*{
+    letter-spacing: 0.1em;
+}
 .menu-btn{
     width: 30px;
     height: 40px;
@@ -31,7 +34,7 @@ ul{
 }
 
 .menu-btn:hover .first-line{transform: translateX(0px);}
-.menu-btn:hover .second-line{transform: translateX(4px);}
+.menu-btn:hover .second-line{transform: translateX(5px);}
 .menu-btn:hover .third-line{transform: translateX(15px);}
 
 .menu-wrapper{
