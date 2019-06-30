@@ -50,13 +50,6 @@ ul{
     padding-left: 5%;
     padding-right: 5%;
 }
-.about-block{
+.about-block {
     height: 85vh;
-}
-.sw-wrapper{
-    background: url(../images/star-wars-icons-png-3.png) center center no-repeat;
-    background-size: 100% 100%;
-    margin: 0 auto;
-    width: 60%;
-    height: 60%;
 }
