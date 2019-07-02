@@ -39,10 +39,12 @@ ul{
 .menu-btn:hover .third-line{transform: translateX(15px);}
 
 .menu-wrapper{
-    width: 15%;
     padding: 0px 5px 15px 15px;
+    position: fixed;
+    width: 15%;
 }
 .home-content_wrapper{
+    margin: 0 auto;
     color: #c8c8c8;
     width: 85%;
     height: 100%;
