@@ -1,5 +1,5 @@
 *{
-    letter-spacing: 0.1em;
+    letter-spacing: 0.05em;
 }
 .menu-btn{
     width: 30px;
@@ -16,6 +16,12 @@
     height: 2px;
     margin-bottom: 5px;
     transition: all .7s cubic-bezier(.5,0,0,1);
+}
+.greeting_wrapper{
+    color: white;
+    margin: 0 auto;
+    font-size: 1.5rem;
+    font-weight: 400;
 }
 .content-wrapper{
     display: flex;
@@ -39,19 +45,107 @@ ul{
 .menu-btn:hover .third-line{transform: translateX(15px);}
 
 .menu-wrapper{
-    padding: 0px 5px 15px 15px;
+    padding: 0 5px 15px 15px;
     position: fixed;
     width: 15%;
+    display: none;
+    height: 100%;
 }
 .home-content_wrapper{
     margin: 0 auto;
     color: #c8c8c8;
     width: 85%;
-    height: 100%;
+    height: 100vh;
     padding-top: 3%;
     padding-left: 5%;
     padding-right: 5%;
 }
 .about-block {
-    height: 85vh;
+    /*height: 85vh;*/
+    margin-bottom: 100px;
 }
+.edit-popup{
+    position: absolute;
+    z-index: 1000;
+    top: 5%;
+    margin: 0 auto;
+    left: 0%;
+    width: 60%;
+    height: 0vh;
+}
+.caption-text{
+    opacity: .6;
+}
+.edit-popup ul li{
+    /*border-bottom: 1px solid rgba(170, 170, 170, 0.2);*/
+    margin-bottom: 2.5em;
+}
+.edit-popup ul li .caption-text{
+    margin-bottom: 1em;
+}
+.preview-wrapper{
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+    padding: 15px;
+}
+.card-content-wrapper{
+    display: flex;
+    flex-direction: column;
+}
+.card-text{
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+}
+.progress-wrapper{
+    width: 100%;
+    height: 1.2em;
+    border-radius: 1.2em;
+    background-color: rgba(209, 209, 209, 0.9);
+    margin-bottom: 5%;
+}
+.progress-line{
+    width: 60%;
+    height: 100%;
+    border-radius: 1.2em;
+}
+.theme-selects_wrapper{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    margin-bottom: 1em;
+}
+.theme-select {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid whitesmoke;
+    margin-right: 1em;
+    cursor: pointer;
+}
+.indigo-theme{
+    background-color: #4d426d;
+}
+.black-theme{
+    background-color: #20222a;
+}
+.selected-theme{
+    border: 2px solid #00b0ff;
+    transition: .4s ease;
+}
+.radio-item{
+    padding-bottom: 10px;
+}
+
+[type="radio"]:checked + span:after, [type="radio"].with-gap:checked + span:after {
+    background-color: #00b0ff;
+}
+[type="radio"]:checked + span:after, [type="radio"].with-gap:checked + span:before, [type="radio"].with-gap:checked + span:after {
+    border: 2px solid #00b0ff;
+}
+
+
+
+
