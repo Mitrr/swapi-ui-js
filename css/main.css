@@ -196,6 +196,18 @@ ul{
 .active_tab-content{
     display: block;
 }
+.skills_block{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+.skill-container{
+    display: flex;
+    flex-direction: row;
+    width: 40%;
+    align-items: center;
+    margin-bottom: 20px;
+}
 
 
 
