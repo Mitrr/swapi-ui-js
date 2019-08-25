@@ -145,6 +145,57 @@ ul{
 [type="radio"]:checked + span:after, [type="radio"].with-gap:checked + span:before, [type="radio"].with-gap:checked + span:after {
     border: 2px solid #00b0ff;
 }
+.tabs_container{
+    width: 35%;
+    text-align: left;
+}
+.tabs_container>ul{
+    display: flex;
+    flex-direction: column;
+}
+.tab-link_tab{
+    margin-bottom: 10%;
+    opacity: .5;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 600;
+    transition: .2s;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.tab-link_tab>span{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: 1.5px solid #f44336;
+    opacity: .3;
+    display: block;
+    float: left;
+    transition: .4s;
+    margin-right: 14px;
+}
+.active_tab-link{
+    color: white;
+    opacity: 0.7;
+    font-size: 18px;
+}
+.active_tab-link span{
+    transform: scale(1.8);
+    opacity: 1;
+    transition: .4s;
+}
+.active_tab-link .circle{
+    transform: scale(1.2);
+    transition: .3s;
+}
+.tabs_content_container{
+    display: none;
+}
+.active_tab-content{
+    display: block;
+}
 
 
 
