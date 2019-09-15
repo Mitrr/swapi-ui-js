@@ -16,6 +16,7 @@
     min-height: 200px;
     border-radius: 4px;
     cursor: pointer;
+    padding: 10px;
 }
 .personage-item_container:not(:last-child){
     margin-right: 20px;
@@ -26,4 +27,15 @@
     border: 1px solid ghostwhite;
     padding:0 15px;
     border-radius: 6px;
+}
+.arrow{
+    width: 30px;
+    height: 30px;
+    border: 1px solid ghostwhite;
+    border-radius: 50%;
+    text-align: center;
+    cursor: pointer;
+}
+.arrow:hover{
+    background-color: rgba(255, 255, 255, 0.09);
 }
