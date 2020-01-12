@@ -13,7 +13,7 @@
 
         <a class="viewed-btn btn-floating waves-effect"><i class="material-icons">turned_in_not</i></a>
 
-        <div class="viewed-menu card">
+        <div class="viewed-menu card" style="display: none">
             <ul>
                 <li>
                     <span>first</span>
@@ -24,16 +24,12 @@
             </ul>
         </div>
 
-        <h5>{{header.toUpperCase()}}</h5>
+        <h5>Привет</h5>
 
         <div id="search-console">
-            <input type="text" id="search-input" v-model="request" style="color: #595959">
+            <input type="text" id="search-input" style="color: #595959">
         </div>
 
-        <div class="card film-card" v-for="(film, i) in films" :key="i">
-            <p>{{++i}}. {{film.title}}</p>
-            <a class="waves-effect waves-light btn">Добавить в просмотренное</a>
-        </div>
 
     </div>
 
@@ -41,25 +37,8 @@
     <script src="https://unpkg.com/vue"></script>
 
     <script>
-        let init = "То что ищешь ты введи ...";
-
         let vm = new Vue({
             //опции нашего приложения
-            el: "#search",
-            data: {
-                request: init,
-                films:[]
-            },
-            computed: {
-                header(){
-                    return this.request === init || !this.request ? "Ничего не ищем сейчас" : `Ищем ${this.request}`
-                }
-            },
-
-            async mounted(){
-                let filmsInfo = await fetch("https://swapi.co/api/films/").then(res => res.json());
-                this.films = filmsInfo.results;
-            }
         })
     </script>
 
