@@ -2,6 +2,7 @@
     width: 100%;
     padding: 15px;
     text-align: center;
+    position: relative;
 }
 #search-console{
     width: 60%;
@@ -15,10 +16,24 @@
 #search-input{
     width: 95%;
 }
-.card{
+.film-card{
     width: 50%;
     margin: 0 auto;
     min-height: 200px;
+}
+.viewed-btn{
+    cursor: pointer;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+}
+.viewed-menu{
+    position: absolute;
+    right: 35px;
+    top: 70px;
+    padding: 10px;
+    width: 350px;
+    z-index: 1000;
 }
 body{
     background-color: #f3f6f8;
